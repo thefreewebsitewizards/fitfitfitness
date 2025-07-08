@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITFITFITNESS - Transform Your Body & Mind</title>
+    <meta name="description" content="Professional fitness training online & in-person. Martial arts, weight training, and nutrition guidance in Lucknow since 2015.">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-wrapper">
+                    <img src="photos and vids/logo.jpg" alt="FITFITFITNESS Logo" class="logo-img">
+                    <div class="logo-glow"></div>
+                </div>
+                <span class="logo-text">FITFITFITNESS</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#programs" class="nav-link"><span>Programs</span></a></li>
+                <li class="nav-item"><a href="#sessions" class="nav-link"><span>Sessions</span></a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link"><span>Testimonials</span></a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link"><span>FAQ</span></a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Transform Your</span>
+                <span class="title-line highlight">Body & Mind</span>
+            </h1>
+            <p class="hero-subtitle">Professional Fitness Training Online & In-Person</p>
+            <div class="hero-buttons">
+                <a href="#programs" class="cta-button primary">Explore Programs</a>
+                <a href="#sessions" class="cta-button secondary">
+                    <i class="fas fa-play"></i>
+                    Watch Live Session
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About FITFITFITNESS</h2>
+                    <p>FITFITFITNESS has been transforming lives in Lucknow since 2015. Our certified trainers provide personalized fitness programs combining martial arts, weight training, and nutrition guidance.</p>
+                    <p>Whether your goal is weight loss, self-defense, or overall fitness, our holistic approach delivers results.</p>
+                </div>
+                <div class="about-image">
+                    <img src="photos and vids/about.jpg" alt="About FITFITFITNESS" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title">Our Fitness Programs</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="programs-carousel">
+                    <div class="program-card" onclick="openProgramModal('kids')">
+                        <img src="photos and vids/kids.jpg" alt="Martial Arts for Kids" class="program-img">
+                        <div class="program-content">
+                            <h3>Martial Arts for Kids</h3>
+                            <p>Age-appropriate training</p>
+                            <p>Builds confidence and discipline</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="openProgramModal('selfdefense')">
+                        <img src="photos and vids/self defense.jpg" alt="Adult Self-Defense" class="program-img">
+                        <div class="program-content">
+                            <h3>Adult Self-Defense</h3>
+                            <p>Practical techniques</p>
+                            <p>Multiple martial arts styles</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="openProgramModal('weightloss')">
+                        <img src="photos and vids/weightloss.jpg" alt="Weight Loss Journey" class="program-img">
+                        <div class="program-content">
+                            <h3>Weight Loss Journey</h3>
+                            <p>30-day transformations</p>
+                            <p>Diet and exercise combo</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="openProgramModal('strength')">
+                        <img src="photos and vids/strength.jpg" alt="Strength Training" class="program-img">
+                        <div class="program-content">
+                            <h3>Strength Training</h3>
+                            <p>Build muscle</p>
+                            <p>Improve metabolism</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="openProgramModal('cardio')">
+                        <img src="photos and vids/cardio.jpg" alt="Cardio Blast" class="program-img">
+                        <div class="program-content">
+                            <h3>Cardio Blast</h3>
+                            <p>High-energy workouts</p>
+                            <p>Fat burning</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="program-card" onclick="openProgramModal('yoga')">
+                        <img src="photos and vids/yoga.jpg" alt="Yoga & Stretching" class="program-img">
+                        <div class="program-content">
+                            <h3>Yoga & Stretching</h3>
+                            <p>Improve flexibility</p>
+                            <p>Reduce stress</p>
+                            <div class="learn-more-btn">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="programs-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="programs-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Sessions Section -->
+    <section id="sessions" class="sessions">
+        <div class="container">
+            <div class="sessions-header">
+                <h2 class="section-title">Join Our Live Sessions</h2>
+                <p class="sessions-subtitle">Experience real-time fitness training from the comfort of your home</p>
+            </div>
+            
+            <div class="sessions-content">
+                <div class="sessions-grid">
+                    <div class="session-card morning">
+                        <div class="session-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="session-info">
+                            <h3>Morning Power Sessions</h3>
+                            <div class="session-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5:00 - 6:00 AM</span>
+                            </div>
+                            <div class="session-days">
+                                <span class="day active">Mon</span>
+                                <span class="day active">Tue</span>
+                                <span class="day active">Wed</span>
+                                <span class="day active">Thu</span>
+                                <span class="day active">Fri</span>
+                                <span class="day">Sat</span>
+                                <span class="day">Sun</span>
+                            </div>
+                            <p class="session-description">Start your day with high-energy workouts designed to boost metabolism and energy levels.</p>
+                            <div class="session-stats">
+                                <div class="stat">
+                                    <span class="stat-number">45</span>
+                                    <span class="stat-label">min</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">150+</span>
+                                    <span class="stat-label">participants</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="session-card evening">
+                        <div class="session-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="session-info">
+                            <h3>Evening Strength Sessions</h3>
+                            <div class="session-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6:00 - 7:00 PM</span>
+                            </div>
+                            <div class="session-days">
+                                <span class="day">Mon</span>
+                                <span class="day active">Tue</span>
+                                <span class="day">Wed</span>
+                                <span class="day active">Thu</span>
+                                <span class="day">Fri</span>
+                                <span class="day active">Sat</span>
+                                <span class="day">Sun</span>
+                            </div>
+                            <p class="session-description">Unwind with strength training and muscle-building exercises perfect for after work.</p>
+                            <div class="session-stats">
+                                <div class="stat">
+                                    <span class="stat-number">60</span>
+                                    <span class="stat-label">min</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">200+</span>
+                                    <span class="stat-label">participants</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="session-card weekend">
+                        <div class="session-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="session-info">
+                            <h3>Weekend Workshops</h3>
+                            <div class="session-time">
+                                <i class="fas fa-clock"></i>
+                                <span>10:00 AM - 12:00 PM</span>
+                            </div>
+                            <div class="session-days">
+                                <span class="day">Mon</span>
+                                <span class="day">Tue</span>
+                                <span class="day">Wed</span>
+                                <span class="day">Thu</span>
+                                <span class="day">Fri</span>
+                                <span class="day active">Sat</span>
+                                <span class="day active">Sun</span>
+                            </div>
+                            <p class="session-description">Special workshops covering nutrition, self-defense, and advanced training techniques.</p>
+                            <div class="session-stats">
+                                <div class="stat">
+                                    <span class="stat-number">120</span>
+                                    <span class="stat-label">min</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">participants</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="platform-section">
+                    <div class="platform-info">
+                        <h3>Stream Live On</h3>
+                        <div class="platform-icons">
+                            <div class="platform-item">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook Live</span>
+                            </div>
+                            <div class="platform-item">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube Live</span>
+                            </div>
+                            <div class="platform-item">
+                                <i class="fas fa-video"></i>
+                                <span>Zoom Sessions</span>
+                            </div>
+                        </div>
+                        <div class="live-indicator">
+                            <div class="live-dot"></div>
+                            <span>Next session starts in 2 hours</span>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-section">
+                        <h3>Ready to Join?</h3>
+                        <p>Reserve your spot in our next live session</p>
+                        <div class="booking-buttons">
+                            <button class="cta-button primary" id="book-trial-btn">Book Free Trial</button>
+                        </div>
+                        <div class="booking-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Free first session</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>No equipment needed</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Interactive coaching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Success Stories</span>
+                </div>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real transformations from real people who trusted us with their fitness journey</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- First set -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Riya Sharma</h4>
+                            <span class="user-program">Weight Loss Program</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Lost 12kg in 3 months! The personalized diet plan and workout routine made all the difference. The trainers were incredibly supportive throughout my journey."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Amit Kumar</h4>
+                            <span class="user-program">Kids Martial Arts</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"My kids absolutely love the martial arts classes. They've gained so much confidence and discipline. The instructors are patient and skilled."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Priya Mehta</h4>
+                            <span class="user-program">Self Defense Training</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The self-defense training literally saved me in a dangerous situation. I feel so much more confident and secure now. Highly recommend!"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Vikram Patel</h4>
+                            <span class="user-program">Strength Training</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Best decision I made for my fitness journey. The trainers are amazing and the results speak for themselves. Gained 8kg of muscle mass!"</p>
+                    </div>
+                </div>
+                
+                <!-- Duplicate set for seamless loop -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Riya Sharma</h4>
+                            <span class="user-program">Weight Loss Program</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Lost 12kg in 3 months! The personalized diet plan and workout routine made all the difference. The trainers were incredibly supportive throughout my journey."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Amit Kumar</h4>
+                            <span class="user-program">Kids Martial Arts</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"My kids absolutely love the martial arts classes. They've gained so much confidence and discipline. The instructors are patient and skilled."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Priya Mehta</h4>
+                            <span class="user-program">Self Defense Training</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The self-defense training literally saved me in a dangerous situation. I feel so much more confident and secure now. Highly recommend!"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <div class="avatar-img">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <div class="user-info">
+                            <h4>Vikram Patel</h4>
+                            <span class="user-program">Strength Training</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Best decision I made for my fitness journey. The trainers are amazing and the results speak for themselves. Gained 8kg of muscle mass!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need equipment for online sessions?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we modify exercises for home setups.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the first class really free?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Try any program with no obligation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What age is appropriate for kids' martial arts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept children from 5 years old.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How soon can I expect results?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most clients see changes within 3-4 weeks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="photos and vids/logo.jpg" alt="FITFITFITNESS Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">FITFITFITNESS</span>
+                    </div>
+                    <p class="footer-description">Transforming lives through fitness since 2015. Your journey to a healthier you starts here.</p>
+                </div>
+                
+                <div class="footer-links-section">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fas fa-chevron-right"></i>Home</a></li>
+                            <li><a href="#about"><i class="fas fa-chevron-right"></i>About</a></li>
+                            <li><a href="#programs"><i class="fas fa-chevron-right"></i>Programs</a></li>
+                            <li><a href="#sessions"><i class="fas fa-chevron-right"></i>Sessions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#faq"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                            <li><a href="#contact"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">+91 9876543210</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">info@fitfitfitness.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Mumbai, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <div class="social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/amit.yadav.145156/" class="social-icon facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-tooltip">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@fitfitfitness" class="social-icon youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span class="social-tooltip">YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/fitfitfitneess" class="social-icon instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-tooltip">Instagram</span>
+                        </a>
+                        <a href="https://x.com/Amitstyle01?t=FlyWGpGEGMFj6ZsdJYG42A&s=09&fbclid=PAZXh0bgNhZW0CMTEAAafHAZ2eVd-9mpH5_m7Rk4kL9QxDhJq-Hh-8ggrIbuOEhYbQcTHgMhAW64qBQA_aem_llo_oBy4RRlq1lo4_s8dWA" class="social-icon twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 FITFITFITNESS. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Program Modals -->
+    <!-- Weight Loss Modal -->
+    <div id="weightloss-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('weightloss')">&times;</span>
+            <div class="modal-header">
+                <h2>Weight Loss Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our comprehensive Weight Loss Program is designed to help you achieve sustainable weight loss through a combination of cardiovascular exercises, strength training, and personalized nutrition guidance. This program focuses on creating a caloric deficit while preserving lean muscle mass, ensuring healthy and long-lasting results.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Personalized workout plans tailored to your fitness level</li>
+                        <li>Nutritional counseling and meal planning</li>
+                        <li>Progress tracking and body composition analysis</li>
+                        <li>Group fitness classes and one-on-one training sessions</li>
+                        <li>24/7 support from certified trainers</li>
+                        <li>Access to our mobile app for workout tracking</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>12-week intensive program with optional extensions</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>3-5 sessions per week, flexible timing available</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Weight Loss Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'weightloss')">
+                        <div class="form-group">
+                            <label for="weightloss-name">Full Name *</label>
+                            <input type="text" id="weightloss-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-email">Email Address *</label>
+                            <input type="email" id="weightloss-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-phone">Phone Number *</label>
+                            <input type="tel" id="weightloss-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-age">Age *</label>
+                            <input type="number" id="weightloss-age" name="age" min="16" max="80" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-experience">Fitness Experience Level *</label>
+                            <select id="weightloss-experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-goals">Weight Loss Goals</label>
+                            <textarea id="weightloss-goals" name="goals" placeholder="Tell us about your specific weight loss goals..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weightloss-medical">Medical Conditions/Injuries</label>
+                            <textarea id="weightloss-medical" name="medical" placeholder="Please list any medical conditions or injuries we should be aware of..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Self Defense Modal -->
+    <div id="selfdefense-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('selfdefense')">&times;</span>
+            <div class="modal-header">
+                <h2>Self Defense Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our Self Defense Program combines practical martial arts techniques with situational awareness training to help you build confidence and protect yourself. This comprehensive program draws from multiple martial arts disciplines including Krav Maga, Brazilian Jiu-Jitsu, and traditional boxing.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Basic striking techniques (punches, kicks, elbows, knees)</li>
+                        <li>Grappling and ground defense fundamentals</li>
+                        <li>Situational awareness and de-escalation techniques</li>
+                        <li>Escape methods from common holds and grabs</li>
+                        <li>Mental conditioning and confidence building</li>
+                        <li>Sparring practice in controlled environments</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>8-week foundational course with advanced levels available</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>2-3 sessions per week, evening and weekend classes available</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Self Defense Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'selfdefense')">
+                        <div class="form-group">
+                            <label for="selfdefense-name">Full Name *</label>
+                            <input type="text" id="selfdefense-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-email">Email Address *</label>
+                            <input type="email" id="selfdefense-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-phone">Phone Number *</label>
+                            <input type="tel" id="selfdefense-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-age">Age *</label>
+                            <input type="number" id="selfdefense-age" name="age" min="16" max="80" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-experience">Martial Arts Experience *</label>
+                            <select id="selfdefense-experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="none">No Experience</option>
+                                <option value="beginner">Beginner (0-1 years)</option>
+                                <option value="intermediate">Intermediate (2-5 years)</option>
+                                <option value="advanced">Advanced (5+ years)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-motivation">What motivates you to learn self defense?</label>
+                            <textarea id="selfdefense-motivation" name="motivation" placeholder="Tell us what brought you to self defense training..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selfdefense-medical">Medical Conditions/Injuries</label>
+                            <textarea id="selfdefense-medical" name="medical" placeholder="Please list any medical conditions or injuries we should be aware of..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kids Fitness Modal -->
+    <div id="kids-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('kids')">&times;</span>
+            <div class="modal-header">
+                <h2>Kids Fitness Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our Kids Fitness Program is specially designed to make exercise fun and engaging for children aged 6-16. Through games, activities, and age-appropriate exercises, we help kids develop healthy habits, improve coordination, build strength, and enhance social skills in a safe and supportive environment.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Fun fitness games and obstacle courses</li>
+                        <li>Basic movement patterns and coordination drills</li>
+                        <li>Team building activities and social interaction</li>
+                        <li>Flexibility and mobility exercises</li>
+                        <li>Introduction to various sports and activities</li>
+                        <li>Confidence building and goal setting</li>
+                    </ul>
+                    
+                    <h4>Age Groups:</h4>
+                    <ul>
+                        <li>Little Movers (6-8 years): Focus on basic movements and fun</li>
+                        <li>Active Kids (9-12 years): Structured activities and skill development</li>
+                        <li>Teen Fitness (13-16 years): Strength training and sport-specific training</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>Ongoing program with monthly enrollment options</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>2-3 sessions per week, after-school and weekend options available</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Kids Fitness Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'kids')">
+                        <div class="form-group">
+                            <label for="kids-parent-name">Parent/Guardian Name *</label>
+                            <input type="text" id="kids-parent-name" name="parentName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-parent-email">Parent/Guardian Email *</label>
+                            <input type="email" id="kids-parent-email" name="parentEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-parent-phone">Parent/Guardian Phone *</label>
+                            <input type="tel" id="kids-parent-phone" name="parentPhone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-child-name">Child's Name *</label>
+                            <input type="text" id="kids-child-name" name="childName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-child-age">Child's Age *</label>
+                            <input type="number" id="kids-child-age" name="childAge" min="6" max="16" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-experience">Child's Activity Level *</label>
+                            <select id="kids-experience" name="activityLevel" required>
+                                <option value="">Select activity level</option>
+                                <option value="low">Low - Prefers indoor activities</option>
+                                <option value="moderate">Moderate - Some sports/activities</option>
+                                <option value="high">High - Very active, plays multiple sports</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-interests">Child's Interests/Sports</label>
+                            <textarea id="kids-interests" name="interests" placeholder="What sports or activities does your child enjoy?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-medical">Medical Conditions/Allergies</label>
+                            <textarea id="kids-medical" name="medical" placeholder="Please list any medical conditions, allergies, or special needs..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kids-emergency">Emergency Contact (if different from parent)</label>
+                            <input type="text" id="kids-emergency" name="emergencyContact" placeholder="Name and phone number">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strength Training Modal -->
+    <div id="strength-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('strength')">&times;</span>
+            <div class="modal-header">
+                <h2>Strength Training Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our Strength Training Program is designed to help you build lean muscle mass, increase bone density, and boost your metabolism. Using progressive overload principles, this program combines compound movements with targeted isolation exercises to maximize strength gains and muscle development.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Personalized strength training routines</li>
+                        <li>Progressive overload programming</li>
+                        <li>Proper form instruction and technique coaching</li>
+                        <li>Compound and isolation exercise combinations</li>
+                        <li>Nutrition guidance for muscle building</li>
+                        <li>Recovery and rest day planning</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>12-week progressive program with ongoing support</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>3-4 sessions per week, flexible timing available</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Strength Training Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'strength')">
+                        <div class="form-group">
+                            <label for="strength-name">Full Name *</label>
+                            <input type="text" id="strength-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-email">Email Address *</label>
+                            <input type="email" id="strength-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-phone">Phone Number *</label>
+                            <input type="tel" id="strength-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-age">Age *</label>
+                            <input type="number" id="strength-age" name="age" min="16" max="80" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-experience">Weight Training Experience *</label>
+                            <select id="strength-experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner (0-6 months)</option>
+                                <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                                <option value="advanced">Advanced (2+ years)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-goals">Strength Goals</label>
+                            <textarea id="strength-goals" name="goals" placeholder="What are your specific strength training goals?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="strength-medical">Medical Conditions/Injuries</label>
+                            <textarea id="strength-medical" name="medical" placeholder="Please list any medical conditions or injuries we should be aware of..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cardio Blast Modal -->
+    <div id="cardio-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('cardio')">&times;</span>
+            <div class="modal-header">
+                <h2>Cardio Blast Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our high-intensity Cardio Blast Program is designed to maximize fat burning, improve cardiovascular health, and boost your endurance. This dynamic program combines HIIT (High-Intensity Interval Training), circuit training, and fun cardio exercises to keep you motivated and engaged.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>High-intensity interval training (HIIT) sessions</li>
+                        <li>Circuit training workouts</li>
+                        <li>Dance cardio and aerobic exercises</li>
+                        <li>Heart rate monitoring and tracking</li>
+                        <li>Fat burning nutrition guidance</li>
+                        <li>Endurance building progressions</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>8-week intensive program with ongoing classes</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>4-5 sessions per week, morning and evening options</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Cardio Blast Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'cardio')">
+                        <div class="form-group">
+                            <label for="cardio-name">Full Name *</label>
+                            <input type="text" id="cardio-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-email">Email Address *</label>
+                            <input type="email" id="cardio-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-phone">Phone Number *</label>
+                            <input type="tel" id="cardio-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-age">Age *</label>
+                            <input type="number" id="cardio-age" name="age" min="16" max="80" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-fitness">Current Fitness Level *</label>
+                            <select id="cardio-fitness" name="fitnessLevel" required>
+                                <option value="">Select your level</option>
+                                <option value="low">Low - Just starting out</option>
+                                <option value="moderate">Moderate - Some regular activity</option>
+                                <option value="high">High - Very active lifestyle</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-goals">Cardio Goals</label>
+                            <textarea id="cardio-goals" name="goals" placeholder="What do you hope to achieve with cardio training?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardio-medical">Medical Conditions/Heart Issues</label>
+                            <textarea id="cardio-medical" name="medical" placeholder="Please list any heart conditions, blood pressure issues, or other medical concerns..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yoga & Stretching Modal -->
+    <div id="yoga-modal" class="program-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProgramModal('yoga')">&times;</span>
+            <div class="modal-header">
+                <h2>Yoga & Stretching Program</h2>
+            </div>
+            <div class="modal-body">
+                <div class="program-definition">
+                    <h3>Program Definition</h3>
+                    <p>Our Yoga & Stretching Program focuses on improving flexibility, balance, and mental well-being through traditional yoga practices and targeted stretching routines. This program is perfect for stress relief, injury prevention, and enhancing overall body awareness and mindfulness.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Hatha and Vinyasa yoga sessions</li>
+                        <li>Deep stretching and flexibility routines</li>
+                        <li>Breathing techniques and meditation</li>
+                        <li>Balance and stability training</li>
+                        <li>Stress reduction and relaxation methods</li>
+                        <li>Mindfulness and body awareness practices</li>
+                    </ul>
+                    
+                    <h4>Class Types:</h4>
+                    <ul>
+                        <li>Beginner Yoga: Gentle introduction to poses and breathing</li>
+                        <li>Power Yoga: Dynamic flow for strength and flexibility</li>
+                        <li>Restorative Yoga: Deep relaxation and stress relief</li>
+                        <li>Stretch & Mobility: Targeted flexibility improvement</li>
+                    </ul>
+                    
+                    <h4>Program Duration:</h4>
+                    <p>Ongoing classes with flexible drop-in options</p>
+                    
+                    <h4>Schedule:</h4>
+                    <p>Daily classes available, morning and evening sessions</p>
+                </div>
+                
+                <div class="registration-form">
+                    <h3>Register for Yoga & Stretching Program</h3>
+                    <form class="program-registration-form" onsubmit="submitProgramRegistration(event, 'yoga')">
+                        <div class="form-group">
+                            <label for="yoga-name">Full Name *</label>
+                            <input type="text" id="yoga-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-email">Email Address *</label>
+                            <input type="email" id="yoga-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-phone">Phone Number *</label>
+                            <input type="tel" id="yoga-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-age">Age *</label>
+                            <input type="number" id="yoga-age" name="age" min="16" max="80" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-experience">Yoga Experience *</label>
+                            <select id="yoga-experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="none">No Experience</option>
+                                <option value="beginner">Beginner (0-6 months)</option>
+                                <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                                <option value="advanced">Advanced (2+ years)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-goals">Wellness Goals</label>
+                            <textarea id="yoga-goals" name="goals" placeholder="What do you hope to achieve through yoga and stretching?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="yoga-medical">Medical Conditions/Injuries</label>
+                            <textarea id="yoga-medical" name="medical" placeholder="Please list any injuries, chronic pain, or physical limitations..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Free Trial Modal -->
+    <div id="book-trial-modal" class="booking-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal('book-trial')">&times;</span>
+            <div class="modal-header">
+                <h2>Book Your Free Trial Session</h2>
+                <p>Start your fitness journey with a complimentary session</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form" onsubmit="submitTrialBooking(event)">
+                    <div class="form-group">
+                        <label for="trial-name">Full Name *</label>
+                        <input type="text" id="trial-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-email">Email Address *</label>
+                        <input type="email" id="trial-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-phone">Phone Number *</label>
+                        <input type="tel" id="trial-phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-program">Preferred Program *</label>
+                        <select id="trial-program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="strength">Strength Training</option>
+                            <option value="cardio">Cardio Blast</option>
+                            <option value="yoga">Yoga & Stretching</option>
+                            <option value="general">General Fitness</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-date">Preferred Date *</label>
+                        <input type="date" id="trial-date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-time">Preferred Time *</label>
+                        <select id="trial-time" name="time" required>
+                            <option value="">Select time</option>
+                            <option value="6:00 AM">6:00 AM</option>
+                            <option value="7:00 AM">7:00 AM</option>
+                            <option value="8:00 AM">8:00 AM</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-fitness">Current Fitness Level *</label>
+                        <select id="trial-fitness" name="fitnessLevel" required>
+                            <option value="">Select your level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-goals">Fitness Goals</label>
+                        <textarea id="trial-goals" name="goals" placeholder="What would you like to achieve?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trial-medical">Medical Conditions/Injuries</label>
+                        <textarea id="trial-medical" name="medical" placeholder="Please list any medical conditions or injuries we should be aware of..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Book Free Trial</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Schedule Modal -->
+    <div id="view-schedule-modal" class="booking-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal('view-schedule')">&times;</span>
+            <div class="modal-header">
+                <h2>Class Schedule</h2>
+                <p>Find the perfect time for your fitness journey</p>
+            </div>
+            <div class="modal-body">
+                <div class="schedule-container">
+                    <div class="schedule-tabs">
+                        <button class="tab-btn active" onclick="showScheduleTab('weekly')">Weekly Schedule</button>
+                        <button class="tab-btn" onclick="showScheduleTab('monthly')">Monthly View</button>
+                    </div>
+                    
+                    <div id="weekly-schedule" class="schedule-tab active">
+                        <div class="schedule-grid">
+                            <div class="schedule-header">
+                                <div class="time-slot">Time</div>
+                                <div class="day-header">Monday</div>
+                                <div class="day-header">Tuesday</div>
+                                <div class="day-header">Wednesday</div>
+                                <div class="day-header">Thursday</div>
+                                <div class="day-header">Friday</div>
+                                <div class="day-header">Saturday</div>
+                                <div class="day-header">Sunday</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">6:00 AM</div>
+                                <div class="class-slot strength">Strength Training</div>
+                                <div class="class-slot cardio">Cardio Blast</div>
+                                <div class="class-slot strength">Strength Training</div>
+                                <div class="class-slot yoga">Yoga Flow</div>
+                                <div class="class-slot strength">Strength Training</div>
+                                <div class="class-slot cardio">HIIT Cardio</div>
+                                <div class="class-slot yoga">Morning Yoga</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">7:00 AM</div>
+                                <div class="class-slot cardio">Morning Cardio</div>
+                                <div class="class-slot yoga">Stretch & Flow</div>
+                                <div class="class-slot cardio">HIIT Training</div>
+                                <div class="class-slot strength">Power Lifting</div>
+                                <div class="class-slot cardio">Cardio Blast</div>
+                                <div class="class-slot strength">Weekend Strength</div>
+                                <div class="class-slot">Open Gym</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">8:00 AM</div>
+                                <div class="class-slot yoga">Beginner Yoga</div>
+                                <div class="class-slot strength">Strength & Tone</div>
+                                <div class="class-slot yoga">Power Yoga</div>
+                                <div class="class-slot cardio">Circuit Training</div>
+                                <div class="class-slot yoga">Flexibility Focus</div>
+                                <div class="class-slot cardio">Weekend Cardio</div>
+                                <div class="class-slot strength">Sunday Strength</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">5:00 PM</div>
+                                <div class="class-slot strength">Evening Strength</div>
+                                <div class="class-slot cardio">After Work Cardio</div>
+                                <div class="class-slot strength">Strength Training</div>
+                                <div class="class-slot yoga">Evening Yoga</div>
+                                <div class="class-slot strength">Power Hour</div>
+                                <div class="class-slot">Open Training</div>
+                                <div class="class-slot yoga">Restorative Yoga</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">6:00 PM</div>
+                                <div class="class-slot cardio">HIIT Blast</div>
+                                <div class="class-slot strength">Strength & Power</div>
+                                <div class="class-slot cardio">Cardio Mix</div>
+                                <div class="class-slot strength">Evening Lift</div>
+                                <div class="class-slot cardio">Friday Cardio</div>
+                                <div class="class-slot yoga">Weekend Yoga</div>
+                                <div class="class-slot">Open Gym</div>
+                            </div>
+                            
+                            <div class="schedule-row">
+                                <div class="time-slot">7:00 PM</div>
+                                <div class="class-slot yoga">Evening Flow</div>
+                                <div class="class-slot cardio">Cardio Burn</div>
+                                <div class="class-slot yoga">Stretch & Relax</div>
+                                <div class="class-slot cardio">Interval Training</div>
+                                <div class="class-slot yoga">Wind Down Yoga</div>
+                                <div class="class-slot strength">Saturday Strength</div>
+                                <div class="class-slot yoga">Sunday Flow</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="monthly-schedule" class="schedule-tab">
+                        <div class="monthly-view">
+                            <h3>Monthly Class Calendar</h3>
+                            <p>Our classes run consistently throughout the month with the same weekly schedule. Special events and workshops are announced separately.</p>
+                            
+                            <div class="monthly-info">
+                                <div class="info-card">
+                                    <h4>Class Frequency</h4>
+                                    <ul>
+                                        <li>Strength Training: 15 classes/week</li>
+                                        <li>Cardio Blast: 12 classes/week</li>
+                                        <li>Yoga & Stretching: 10 classes/week</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <h4>Peak Hours</h4>
+                                    <ul>
+                                        <li>Morning: 6:00 AM - 9:00 AM</li>
+                                        <li>Evening: 5:00 PM - 8:00 PM</li>
+                                        <li>Weekend: 7:00 AM - 12:00 PM</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <h4>Class Duration</h4>
+                                    <ul>
+                                        <li>Strength Training: 60 minutes</li>
+                                        <li>Cardio Blast: 45 minutes</li>
+                                        <li>Yoga Sessions: 60-75 minutes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-footer">
+                        <p><strong>Note:</strong> Schedule may vary during holidays. Please check our app or call for updates.</p>
+                        <button class="cta-button primary" onclick="openTrialModal()">Book a Class</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
