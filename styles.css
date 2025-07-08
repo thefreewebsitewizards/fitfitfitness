@@ -1211,11 +1211,11 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
     border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    height: 300px;
+    min-height: 320px;
+    height: auto;
     width: 350px;
-    min-height: 300px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     flex-shrink: 0;
 }
 
@@ -1328,18 +1328,21 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
 .testimonial-content {
     flex: 1;
     display: flex;
-    align-items: center;
-    margin: 20px 0;
+    align-items: flex-start;
+    margin: 15px 0;
+    min-height: 80px;
 }
 
 .testimonial-content p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: #333333;
     margin: 0;
     font-style: italic;
     position: relative;
     padding-left: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .testimonial-content p::before {
@@ -1390,13 +1393,17 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
     
     .testimonial-card {
         width: 300px;
-        height: 280px;
+        min-height: 300px;
+        height: auto;
         padding: 25px;
-        min-height: 280px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     
     .testimonials-header {
         margin-bottom: 40px;
+        padding: 0 20px;
     }
     
     .avatar-img {
@@ -1409,22 +1416,45 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
         font-size: 1.1rem;
     }
     
+    .testimonial-content {
+        margin: 12px 0;
+        min-height: 70px;
+    }
+    
     .testimonial-content p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
         padding-left: 15px;
     }
     
     .achievement-number {
         font-size: 1.3rem;
     }
+    
+    .testimonials .container {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 480px) {
     .testimonial-card {
         width: 280px;
-        height: 260px;
+        min-height: 280px;
+        height: auto;
         padding: 20px;
-        min-height: 260px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .testimonial-content {
+        margin: 10px 0;
+        min-height: 60px;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
     
     .testimonial-footer {
@@ -1441,6 +1471,14 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
     
     .achievement-number {
         margin-bottom: 0;
+    }
+    
+    .testimonials .container {
+        padding: 0 5px;
+    }
+    
+    .testimonials-header {
+        padding: 0 15px;
     }
 }
 
