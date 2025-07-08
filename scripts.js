@@ -419,29 +419,13 @@ document.addEventListener('DOMContentLoaded', initFormValidation);
 
 // Program Modal Functions
 function openProgramModal(program) {
-    const modal = document.getElementById(program + '-modal');
-    if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        
-        // Add animation class
-        setTimeout(() => {
-            modal.classList.add('show');
-        }, 10);
+    // Instead of opening a modal, scroll to the contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
 
-function closeProgramModal(program) {
-    const modal = document.getElementById(program + '-modal');
-    if (modal) {
-        modal.classList.remove('show');
-        
-        setTimeout(() => {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }, 300);
-    }
-}
 
 // Close modal when clicking outside
 window.addEventListener('click', function(event) {
@@ -677,7 +661,13 @@ function initBookingModals() {
     const viewScheduleBtn = document.getElementById('view-schedule-btn');
     
     if (bookTrialBtn) {
-        bookTrialBtn.addEventListener('click', () => openBookingModal('book-trial'));
+        bookTrialBtn.addEventListener('click', () => {
+            // Scroll to contact section instead of opening modal
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     }
     
     if (viewScheduleBtn) {
