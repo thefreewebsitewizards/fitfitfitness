@@ -197,18 +197,19 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 .bar {
     width: 25px;
-    height: 3px;
+    height: 2px;
     background: #ffffff;
-    margin: 3px 0;
+    margin: 4px 0;
     transition: 0.3s;
     border-radius: 2px;
-    max-height: 80vh;
-    overflow-y: auto;
 }
 
 
@@ -2485,7 +2486,7 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        padding: 30px 0;
+        padding: 15px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         margin-left: 0;
     }
@@ -2495,8 +2496,21 @@ h1, h2, h3, h4, h5, h6, .logo-text, .nav-link, .cta-button, .hero-title, .sectio
     }
     
     .nav-menu li {
-        margin: 20px 0;
+        margin: 10px 0;
     }
+    
+    .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
     
     .mobile-join {
         background: linear-gradient(135deg, #ffffff, #f0f0f0);
